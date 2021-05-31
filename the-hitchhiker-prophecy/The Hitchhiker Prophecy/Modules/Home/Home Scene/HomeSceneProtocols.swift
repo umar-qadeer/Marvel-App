@@ -12,7 +12,7 @@ protocol HomeSceneDisplayView: class {
     var interactor: HomeSceneBusinessLogic? { get }
     var router: HomeSceneRoutingLogic? { get }
     
-    func didFetchCharacters(viewModel: [HomeScene.Search.ViewModel])
+    func didFetchCharacters(viewModels: [HomeScene.Search.ViewModel])
     func failedToFetchCharacters(error: Error)
 }
 

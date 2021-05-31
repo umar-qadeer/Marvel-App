@@ -9,6 +9,16 @@
 import UIKit
 
 class HomeCharacterCollectionViewCell: UICollectionViewCell {
+    
+    // MARK: - Properties
+    static var reuseIdentifier: String {
+        String(describing: self)
+    }
+    
+    static var nib: UINib {
+        UINib(nibName: String(describing: self), bundle: nil)
+    }
+    
     // MARK: - Outlets
     @IBOutlet private weak var characterNameLabel: UILabel!
     @IBOutlet private weak var characterImageView: UIImageView!
